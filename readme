@@ -1,0 +1,14 @@
+
+- please make sure you've all the required packages found in packages text file
+- run chatbot.py for starting the chatbot. 
+- For making sentiment analysis, please make sure to run sentiment_analysis.ipynb to train and save the models needed
+- set load_models_flag to True value in the main() method, when set to True the models will be loaded (make sure they are saved first by running sentiment_analysis.ipynb as mentioned before)
+- Some downsides that i didn't have the time to enhance
+	- When parsing the check in and out dates, the next step was to add weeks and months support.
+	- Enhance the sentiment model(please note that the sentiment model accuracy is not that good, i only implemented it as a proof of concept, so while testing some neutral sentences will be predicted as negative and the bot will ask you if you want to talk to a sales rep many times)
+
+		- enhancing the preprocessing function for the text (remove urls, emojis etc.)
+		- trying out different feature extraction techniques (ex: using Tfidf vectorizer)
+		
+	- More testing for finding and fixing more bugs and handling the transition between the different states
+- download the sentiment dataset from here http://thinknook.com/wp-content/uploads/2012/09/Sentiment-Analysis-Dataset.zip
